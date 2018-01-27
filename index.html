@@ -1,0 +1,404 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Pedals</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pedals" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all"/>
+<link href="css/style.css" rel='stylesheet' type='text/css' media="all"/> 
+<link href="css/component.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/swipebox.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/device-mockups.min.css">
+<script src="js/jquery-2.2.3.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<script src="js/jquery.vide.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body class="cbp-spmenu-push">
+	<!-- banner -->
+	<div class="banner" id="home" data-vide-bg="video/videoplayback">
+		<div class="container">
+			<div class="w3layouts-header">
+				<div class="header-left">
+					<a id="logo" href="index.php">
+						<img  src="images/logo.png" class="img-responsive" height="auto" width="50%" style="margin:16px;">
+					</a>
+				</div>
+				<div style="margin-left: 100%;" class="main buttonset">
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+				</div>
+				<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<ul>
+							<li><a href="#home" class="scroll">Home</a></li>
+							<li><a href="#instruction" class="scroll">Instructions</a></li>
+							<li><a href="#work" class="scroll">Our Cycles</a></li>
+							<li><a href="#team" class="scroll">Our Team</a></li>
+							<li><a href="#contact" class="scroll">Contact</a></li>
+						</ul>
+					</nav>
+					<script src="js/classie.js"></script>
+					<script>
+					var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+					showRightPush.onclick = function() {
+						classie.toggle( this, 'active' );
+						classie.toggle( body, 'cbp-spmenu-push-toleft' );
+						classie.toggle( menuRight, 'cbp-spmenu-open' );
+						disableOther( 'showRightPush' );
+					};
+
+					function disableOther( button ) {
+						if( button !== 'showRightPush' ) {
+							classie.toggle( showRightPush, 'disabled' );
+						}
+					}
+				 </script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<br>
+			<br>
+			<div class="container-fluid">
+				<div class="col-sm-5" style="text-align: center;">
+					<div class="device-wrapper deviceRight">
+						<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="pink">
+							<div class="screen" id="screen">
+							</div>
+							<div class="button">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="banner-content" class="col-sm-7" style="text-align: center; vertical-align: middle; ">
+					<div class="row" id="tagline">
+						<h1 style="color: white;">PEDALS</h1>
+						<p style="color: white;">A distance too long too take a walk for and too short for a cab to prove as a pocket friendly medium?<br>Enjoy our bike services at NIT Durgapur with awesome bikes.</p>
+					</div>
+					<br/>
+					<br/>
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<a target="_blank" href="https://play.google.com/store/apps/details?id=com.gmonetix.pedals">
+								<img id="android" src="images/google-play-badge.png" class="img-responsive">
+							</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="instruction" class="logo-singular">
+		<div class="container">
+			<h3 class="agileits-title">Instructions</h3>
+			<div class="col-md-6 singular-left">
+				<p class="sing">Follow the below steps to enjoy your ride.</p>
+				<div class="singular-grids">
+					<div class="singular-grid">
+						<div class="col-md-3 col-xs-3 singular-grid-left">
+							<span onclick="change(1)" class="glyphicon glyphicon-download-alt"></span> 
+						</div>
+						<div class="col-md-9 col-xs-9 singular-grid-right">
+							<h4>Downloading and registering.</h4>
+							<p>Download the app and Register with your respective details or login if you already have an account.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="singular-grid agileits-w3layouts">
+						<div class="col-md-3 col-xs-3 singular-grid-left">
+							<span onclick="change(2)" class="fa fa-bicycle"></span> 
+						</div>
+						<div class="col-md-9 col-xs-9 singular-grid-right">
+							<h4>Request a bike.</h4>
+							<p>Choose and request your desired bike and then you will be provided with the location to collect the bike through a call on your registered mobile number.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="singular-grid agileits-w3layouts">
+						<div class="col-md-3 col-xs-3 singular-grid-left">
+							<span onclick="change(3)" class="fa fa-clock-o"></span> 
+						</div>
+						<div class="col-md-9 col-xs-9 singular-grid-right">
+							<h4>Collecting and returning.</h4>
+							<p>You must collect the bike within 10 minutes of your request else the request will be cancelled. After collecting the chargeable time will start and upon returning the bike your trip ends and you have to pay the generated bill.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 singular-right">
+				<img height="600px" id="disp" src="images/1.png" alt=" " />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="work" id="work">
+		<h3 class="agileits-title">Cycles we provide</h3>
+			<div class="work-grids">
+				<div class="work-grid">
+					<a href="images/6.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/6.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint Pro</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/7.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint RX-2</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid">
+					<a href="images/8.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/8.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Avon<span>E 29</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid">
+					<a href="images/9.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/9.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint RX-2</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div> 
+			<div class="work-grids">
+				<div class="work-grid w3-agileits">
+					<a href="images/10.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/10.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Avon<span>E 29</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid w3-agileits">
+					<a href="images/9.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/9.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint RX-2</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid w3-agileits">
+					<a href="images/6.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/6.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint Pro</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="work-grid w3-agileits">
+					<a href="images/7.jpg" class="b-link-stripe b-animate-go swipebox"  title="">
+						<img src="images/7.jpg" alt="" class="img-responsive"/>
+						<div class="b-wrapper">
+							<div class="b-animate b-from-left">
+								<p>Hero<span>Sprint RX-2</span></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<script src="js/jquery.swipebox.min.js"></script> 
+			<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+	</div>
+	<div id="team" class="about-us  w3l container-fluid">
+		<div class="container">
+			<h3 class="agileits-title">Our Team</h3>
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="col-sm-4">
+					<div class="cont">
+						<img src="images/gemon.jpeg" class="image">
+						<div class="overlay">
+							<div class="text">
+								<p>Gaurav Bordoloi</p>
+								<h5 style="text-align: center;">Co-Founder</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="cont">
+						<img src="images/kaushik.jpg" class="image">
+						<div class="overlay">
+							<div class="text">
+								<p>Kaushik Ray</p>
+								<h5 style="text-align: center;">Co-Founder</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="cont">
+						<img src="images/shane.jpg" class="image">
+						<div class="overlay">
+							<div class="text">
+								<p>Shane Romel Kujur</p>
+								<h5 style="text-align: center;">Co-Founder</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="con">
+				<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox wthree-hvr">Contact Us</a>
+			</div>
+			<a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
+			<div class="modal fade bs-example-modal-md light-box" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content light-box-info">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+						<div class="pop">
+							<h3>Contact Us</h3>
+							<div class="contact-grids">
+								<div class="inp agileits-inp">
+									<form action="config/mail.php" method="post">
+										<input type="text" name="Name" placeholder="Your Name" required=""> 
+										<input type="email" name="Email" placeholder="Email" required="">
+										<input type="text" name="Subject" placeholder="Subject" required="">
+										<textarea name="Message" placeholder="Message" required=""></textarea>
+										<div style="text-align: center;">
+											<input type="submit" value="SEND">
+										</div>
+									</form>
+								</div>
+								<div class="contact-grid">					
+									<h4>LOCATION</h4>
+									<p class="agile-qwe">NIT, Mahatma Gandhi Avenue, Durgapur-713209</p>
+								</div>
+								<div class="contact-grid">
+									<h4>CALL US</h4>
+									<p class="agile-qwe">+917478870112<br>
+										+918442952816<br>+919674381307</p>
+								</div>
+								<div class="contact-grid">
+									<h4>MAIL US</h4>
+									<p class="agile-qwe"><a href="mailto:info@example.com">support@pedals.online</a></p>
+									<p class="agile-qwe"><a href="mailto:info@example.com">people@pedals.online</a></p>
+									<p class="agile-qwe"><a href="mailto:info@example.com">assist@pedals.online</a></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="map" style="height: 400px; width: 100%; margin-top: 50px;"></div>
+			<script type="text/javascript">
+				function myMap() {
+var myCenter=new google.maps.LatLng(23.547386,87.289918);
+
+var mapProp= {
+    center:myCenter,
+    zoom:12,
+};
+
+var map=new google.maps.Map(document.getElementById("map"),mapProp);
+var marker = new google.maps.Marker({position: myCenter});
+
+marker.setMap(map);
+}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8VwFUAVzoVUuTGGjIIV6PQdu0yBGoapU&callback=myMap"></script>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div id="list" class="col-sm-4" style="color: white">
+					<ul style="list-style-type: none">
+                        <li><a target="_blank" style="color:white;" href="pdf/termsAndConditions.pdf">Terms &amp; Conditions</a></li>
+                        <li><a target="_blank" style="color: white;" href="pdf/privacyPolicy.pdf">Privacy Policy</a></li>
+                        <li><a target="_blank" style="color: white;" href="pdf/userGuide.pdf">User Guide</a></li>
+                        <li><a target="_blank" style="color: white;" href="pdf/workWithUs.pdf">Work With us</a></li>
+                    </ul>
+				</div>
+				<div class="col-sm-4">
+                    <p style="color: white">© 2017 Pedals Inc . All rights reserved</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="social-icon agileits">
+					<a target="_blank" href="https://www.facebook.com/pedals.india/" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
+					<a target="_blank" href="https://www.youtube.com/channel/UCpfLFzQqRl01sXP7dxIQ_rg" class="social-button twitter"><i class="fa fa-youtube"></i></a>
+					<a target="_blank" href="https://www.github.com/gmonetix" class="social-button twitter"><i class="fa fa-github"></i></a>
+					<a target="_blank" href="https://play.google.com/store/apps/dev?id=8633237006069676612" class="social-button twitter"><i class="fa fa-android"></i></a>
+					<a target="_blank" href="https://twitter.com/gmonetix" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+				</div> 
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59b4e28fc28eca75e461f26b/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</body>
+</html>

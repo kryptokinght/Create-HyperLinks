@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "name" : "Create Hyperlink",
+    "description" : "It helps you create hyperlinks to parts of webpages from sites like Wikipedia, Mozilla Docs, Medium or to any site that has headings or subheadings with an id.",
+    "version" : "0.1.0",
+    "content_scripts" : [
+      {
+        "matches" : [
+          "<all_urls>"
+        ],
+        "js" : ["content.js"]
+      }
+    ],
+    "permissions" : ["tabs", "contextMenus"],
+    "browser_action" : {
+      "default_popup" : "popup.html"
+    },
+    "background": { 
+      "scripts": ["background.js"]
+    }
+}
